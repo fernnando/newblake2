@@ -1,0 +1,4 @@
+gcc blake2s.c -o blake2s -std=c99 -Wall -pedantic -O3 -march=native -DBLAKE2S_SELFTEST
+gcc blake2b.c -o blake2b -std=c99 -Wall -pedantic -O3 -march=native -DBLAKE2B_SELFTEST
+gcc blake2sp.c blake2s.c -o blake2sp -std=c99 -Wall -pedantic -O3 -march=native -DBLAKE2SP_SELFTEST
+gcc blake2bp.c blake2b.c -o blake2bp -std=c99 -Wall -pedantic -O3 -march=native -DBLAKE2BP_SELFTEST

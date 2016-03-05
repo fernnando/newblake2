@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <in>blake2b.c</in>
+      <in>blake2bp.c</in>
+      <in>blake2s.c</in>
+      <in>blake2sp.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos Importantes"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+      <itemPath>makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c99 -O3 -march=native"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath>blake2b</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="blake2b.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <preprocessorList>
+            <Elem>BLAKE2B_SELFTEST</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="blake2bp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <preprocessorList>
+            <Elem>BLAKE2BP_SELFTEST</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="blake2s.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <preprocessorList>
+            <Elem>BLAKE2S_SELFTEST</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+      <item path="blake2sp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="0">
+          <preprocessorList>
+            <Elem>BLAKE2SP_SELFTEST</Elem>
+          </preprocessorList>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
